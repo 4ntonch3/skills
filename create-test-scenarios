@@ -1,0 +1,22 @@
+---
+name: create-test-scenarios
+description: Interview the user relentlessly about all test cases required for a piece of functionality until reaching shared understanding, resolving each test case. Use when user wants to create tests, asks to update existing test cases or mentions "test cases" or "test scenarios".
+---
+
+Interview me relentlessly about all test cases required for a piece of functionality until reaching shared understanding. Walk down each test case, resolving all test cases one-by-one. For each question, provide your recommended answer.
+
+Ask the questions one at a time.
+
+Use end-to-end tests except when user specifies another type of testing.
+
+Always use black-box pattern, do not investigate existing code base, clarify all required details for tests with user or documentation provided by user.
+
+Always start session with ensuring user agreed on how functionality will be tested: how test will be prepared (ex. database or environment variables setup), what are incoming paremeters, what data is compared with reference.
+
+When user agrees on approach to testing - design required test-cases to cover main functionality and edge-cases from business logic view.
+
+Description of each test-case must correspond to [test_case_template.md](./test_case_template.md).
+
+After decision on each test-case review the rest of suggested test-cases and removed ones which became unactual or covered after user's changes.
+
+At the end present all approved test-cases and highlight possible blind spots from business logic perspective so user can validate that test-cases coverage is sufficient.
